@@ -28,11 +28,12 @@ public class AlkoholController {
 
   @PostMapping("")
   public Object form(@Valid @ModelAttribute("form") AlkoholForm form, BindingResult bindingResult) {
-/*
+    // do form se uloží, co zadal uživatel, do bindingResult se uloží výsledky validací
+    // @ModelAttribute   na pozadí vzniká ModelAndView. kde je předvyplněný formulář, at uživatel nemusí vše zadávat znovu
+
     if (form.getVek() < 18) {
       return "/alkohol/nizky-vek";
     }
-*/
 
     if (bindingResult.hasErrors()) {
       return "/alkohol/formular";

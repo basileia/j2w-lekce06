@@ -9,7 +9,7 @@
 <body>
 <div class="container">
     <div class="kosik">
-        <h1>Objednávka</h1>
+        <h1>Nelze objednat.</h1>
         <div class="error">Alkohol je v ČR možné prodávat lidem až od 18 let.</div>
     </div>
 </div>

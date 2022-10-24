@@ -1,11 +1,6 @@
 package cz.czechitas.java2webapps.lekce6.controller.alkohol;
 
-import javax.validation.constraints.AssertTrue;
-import javax.validation.constraints.Email;
-import javax.validation.constraints.Max;
-import javax.validation.constraints.Min;
-import javax.validation.constraints.NotBlank;
-import javax.validation.constraints.NotNull;
+import javax.validation.constraints.*;
 
 /**
  */
@@ -15,6 +10,7 @@ public class AlkoholForm {
   @NotNull
   private Objem objem;
   @NotBlank
+  @Size(min = 3, max = 300)
   private String jmeno;
   @Min(18)
   @Max(150)
